@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAB403B2AA62BD2253DA4920 /* Pods_malaria_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF85E72921D5C72AC4FEF5 /* Pods_malaria_app.framework */; };
 		E969096422499B2F00DF9999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969096322499B2F00DF9999 /* AppDelegate.swift */; };
 		E969096622499B2F00DF9999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969096522499B2F00DF9999 /* ViewController.swift */; };
 		E969096922499B2F00DF9999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E969096722499B2F00DF9999 /* Main.storyboard */; };
@@ -14,6 +15,13 @@
 		E969096E22499B3100DF9999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E969096C22499B3100DF9999 /* LaunchScreen.storyboard */; };
 		E969097922499B3200DF9999 /* malaria_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969097822499B3200DF9999 /* malaria_appTests.swift */; };
 		E969098422499B3200DF9999 /* malaria_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E969098322499B3200DF9999 /* malaria_appUITests.swift */; };
+		E99A64D82249DA0C00912F40 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = E99A64D62249DA0C00912F40 /* labels.txt */; };
+		E99A64DD2249E27500912F40 /* malaria_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = E99A64D52249DA0C00912F40 /* malaria_model.tflite */; };
+		E9FA46002249A285009B200B /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA45FF2249A285009B200B /* ModelDataHandler.swift */; };
+		E9FA46032249A2F4009B200B /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA46022249A2F4009B200B /* CameraFeedManager.swift */; };
+		E9FA46052249A359009B200B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA46042249A359009B200B /* PreviewView.swift */; };
+		E9FA46072249A42F009B200B /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA46062249A42F009B200B /* CVPixelBufferExtension.swift */; };
+		E9FA46132249CEEC009B200B /* TfliteWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9FA46122249CEEC009B200B /* TfliteWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71CC85AC14D98FD84EAC21D6 /* Pods-malaria_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-malaria_app.release.xcconfig"; path = "Target Support Files/Pods-malaria_app/Pods-malaria_app.release.xcconfig"; sourceTree = "<group>"; };
+		B2FF85E72921D5C72AC4FEF5 /* Pods_malaria_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_malaria_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC046C18E61F76C8170B0797 /* Pods-malaria_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-malaria_app.debug.xcconfig"; path = "Target Support Files/Pods-malaria_app/Pods-malaria_app.debug.xcconfig"; sourceTree = "<group>"; };
 		E969096022499B2F00DF9999 /* malaria_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = malaria_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E969096322499B2F00DF9999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E969096522499B2F00DF9999 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,15 @@
 		E969097F22499B3200DF9999 /* malaria_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = malaria_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E969098322499B3200DF9999 /* malaria_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = malaria_appUITests.swift; sourceTree = "<group>"; };
 		E969098522499B3200DF9999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99A64D52249DA0C00912F40 /* malaria_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; name = malaria_model.tflite; path = malaria_app/malaria_model.tflite; sourceTree = "<group>"; };
+		E99A64D62249DA0C00912F40 /* labels.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = labels.txt; path = malaria_app/labels.txt; sourceTree = "<group>"; };
+		E9FA45FF2249A285009B200B /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
+		E9FA46022249A2F4009B200B /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		E9FA46042249A359009B200B /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		E9FA46062249A42F009B200B /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		E9FA46122249CEEC009B200B /* TfliteWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TfliteWrapper.mm; sourceTree = "<group>"; };
+		E9FA46142249CF07009B200B /* malaria_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "malaria_app-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9FA46152249CF1E009B200B /* TfliteWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TfliteWrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB403B2AA62BD2253DA4920 /* Pods_malaria_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +95,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B9AF7081D564317E7B9794D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2FF85E72921D5C72AC4FEF5 /* Pods_malaria_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A7F11C454C5095AA66BF132 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC046C18E61F76C8170B0797 /* Pods-malaria_app.debug.xcconfig */,
+				71CC85AC14D98FD84EAC21D6 /* Pods-malaria_app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E969095722499B2F00DF9999 = {
 			isa = PBXGroup;
 			children = (
+				E99A64D62249DA0C00912F40 /* labels.txt */,
+				E99A64D52249DA0C00912F40 /* malaria_model.tflite */,
 				E969096222499B2F00DF9999 /* malaria_app */,
 				E969097722499B3200DF9999 /* malaria_appTests */,
 				E969098222499B3200DF9999 /* malaria_appUITests */,
 				E969096122499B2F00DF9999 /* Products */,
+				5A7F11C454C5095AA66BF132 /* Pods */,
+				2B9AF7081D564317E7B9794D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +139,12 @@
 		E969096222499B2F00DF9999 /* malaria_app */ = {
 			isa = PBXGroup;
 			children = (
+				E9FA46112249CEA9009B200B /* TensorflowLiteWrapper */,
+				E9FA46012249A2DF009B200B /* CameraFeed */,
 				E969096322499B2F00DF9999 /* AppDelegate.swift */,
 				E969096522499B2F00DF9999 /* ViewController.swift */,
+				E9FA45FF2249A285009B200B /* ModelDataHandler.swift */,
+				E9FA46062249A42F009B200B /* CVPixelBufferExtension.swift */,
 				E969096722499B2F00DF9999 /* Main.storyboard */,
 				E969096A22499B3100DF9999 /* Assets.xcassets */,
 				E969096C22499B3100DF9999 /* LaunchScreen.storyboard */,
@@ -125,6 +171,25 @@
 			path = malaria_appUITests;
 			sourceTree = "<group>";
 		};
+		E9FA46012249A2DF009B200B /* CameraFeed */ = {
+			isa = PBXGroup;
+			children = (
+				E9FA46022249A2F4009B200B /* CameraFeedManager.swift */,
+				E9FA46042249A359009B200B /* PreviewView.swift */,
+			);
+			path = CameraFeed;
+			sourceTree = "<group>";
+		};
+		E9FA46112249CEA9009B200B /* TensorflowLiteWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E9FA46122249CEEC009B200B /* TfliteWrapper.mm */,
+				E9FA46142249CF07009B200B /* malaria_app-Bridging-Header.h */,
+				E9FA46152249CF1E009B200B /* TfliteWrapper.h */,
+			);
+			path = TensorflowLiteWrapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E969098822499B3200DF9999 /* Build configuration list for PBXNativeTarget "malaria_app" */;
 			buildPhases = (
+				3FB9B8F12A2D5F260496DCE2 /* [CP] Check Pods Manifest.lock */,
 				E969095C22499B2F00DF9999 /* Sources */,
 				E969095D22499B2F00DF9999 /* Frameworks */,
 				E969095E22499B2F00DF9999 /* Resources */,
@@ -193,6 +259,7 @@
 				TargetAttributes = {
 					E969095F22499B2F00DF9999 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					E969097322499B3200DF9999 = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,6 +296,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99A64DD2249E27500912F40 /* malaria_model.tflite in Resources */,
+				E99A64D82249DA0C00912F40 /* labels.txt in Resources */,
 				E969096E22499B3100DF9999 /* LaunchScreen.storyboard in Resources */,
 				E969096B22499B3100DF9999 /* Assets.xcassets in Resources */,
 				E969096922499B2F00DF9999 /* Main.storyboard in Resources */,
@@ -251,13 +320,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FB9B8F12A2D5F260496DCE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-malaria_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E969095C22499B2F00DF9999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E969096622499B2F00DF9999 /* ViewController.swift in Sources */,
+				E9FA46072249A42F009B200B /* CVPixelBufferExtension.swift in Sources */,
 				E969096422499B2F00DF9999 /* AppDelegate.swift in Sources */,
+				E9FA46132249CEEC009B200B /* TfliteWrapper.mm in Sources */,
+				E9FA46032249A2F4009B200B /* CameraFeedManager.swift in Sources */,
+				E9FA46002249A285009B200B /* ModelDataHandler.swift in Sources */,
+				E9FA46052249A359009B200B /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +529,10 @@
 		};
 		E969098922499B3200DF9999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC046C18E61F76C8170B0797 /* Pods-malaria_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJRVSDXBD2;
 				INFOPLIST_FILE = malaria_app/Info.plist;
@@ -441,6 +542,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vincentblog.malaria-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "malaria_app/TensorflowLiteWrapper/malaria_app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,8 +551,10 @@
 		};
 		E969098A22499B3200DF9999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71CC85AC14D98FD84EAC21D6 /* Pods-malaria_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJRVSDXBD2;
 				INFOPLIST_FILE = malaria_app/Info.plist;
@@ -459,6 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vincentblog.malaria-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "malaria_app/TensorflowLiteWrapper/malaria_app-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

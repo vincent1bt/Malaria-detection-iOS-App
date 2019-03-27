@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,84 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="malaria_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2i-bf-23z" customClass="PreviewView" customModule="malaria_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOE-dc-6xq">
+                                        <rect key="frame" x="135" y="318" width="105" height="30"/>
+                                        <state key="normal" title="Resume Button"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-DI-FcI">
+                                        <rect key="frame" x="0.0" y="28" width="117" height="85"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parasitized " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wx-dC-x90">
+                                                <rect key="frame" x="14" y="14" width="89" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="89" id="THH-SC-HSQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfM-Mm-Xyy">
+                                                <rect key="frame" x="13" y="43" width="90" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="BM4-kg-Vfy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.6999064700704225" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="1wx-dC-x90" firstAttribute="top" secondItem="8kX-DI-FcI" secondAttribute="top" constant="14" id="HOt-iM-sJO"/>
+                                            <constraint firstItem="YfM-Mm-Xyy" firstAttribute="top" secondItem="1wx-dC-x90" secondAttribute="bottom" constant="8" id="KN7-5Q-97X"/>
+                                            <constraint firstItem="1wx-dC-x90" firstAttribute="leading" secondItem="8kX-DI-FcI" secondAttribute="leading" constant="14" id="cWP-9l-ATa"/>
+                                            <constraint firstAttribute="trailing" secondItem="YfM-Mm-Xyy" secondAttribute="trailing" constant="14" id="dzI-s7-dJR"/>
+                                            <constraint firstAttribute="bottom" secondItem="YfM-Mm-Xyy" secondAttribute="bottom" constant="21" id="mKl-ir-ntW"/>
+                                            <constraint firstAttribute="trailing" secondItem="1wx-dC-x90" secondAttribute="trailing" constant="14" id="ofv-e8-T1e"/>
+                                            <constraint firstItem="YfM-Mm-Xyy" firstAttribute="leading" secondItem="8kX-DI-FcI" secondAttribute="leading" constant="13" id="qIF-uN-8E2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8kX-DI-FcI" secondAttribute="trailing" constant="258" id="9lX-MA-8OR"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UOE-dc-6xq" secondAttribute="trailing" constant="20" symbolic="YES" id="D56-P4-ivc"/>
+                                    <constraint firstAttribute="bottom" secondItem="8kX-DI-FcI" secondAttribute="bottom" constant="554" id="I5l-kN-V2U"/>
+                                    <constraint firstItem="8kX-DI-FcI" firstAttribute="top" secondItem="s2i-bf-23z" secondAttribute="top" constant="28" id="JbB-ad-tmb"/>
+                                    <constraint firstAttribute="bottom" secondItem="UOE-dc-6xq" secondAttribute="bottom" constant="319" id="MRQ-IO-pUE"/>
+                                    <constraint firstItem="8kX-DI-FcI" firstAttribute="leading" secondItem="s2i-bf-23z" secondAttribute="leading" id="d7U-d5-cLb"/>
+                                    <constraint firstItem="UOE-dc-6xq" firstAttribute="leading" secondItem="s2i-bf-23z" secondAttribute="leading" constant="135" id="nlb-zz-oWJ"/>
+                                    <constraint firstItem="UOE-dc-6xq" firstAttribute="top" secondItem="s2i-bf-23z" secondAttribute="top" constant="318" id="z6b-L6-L5N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s2i-bf-23z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="50P-vJ-SCJ"/>
+                            <constraint firstItem="s2i-bf-23z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mxR-pF-nnK"/>
+                            <constraint firstItem="s2i-bf-23z" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rGJ-hh-bIo"/>
+                            <constraint firstItem="s2i-bf-23z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vE9-Ba-fIP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="classLabel" destination="1wx-dC-x90" id="dYo-Dc-syL"/>
+                        <outlet property="confidenceLabel" destination="YfM-Mm-Xyy" id="I9C-7r-xu5"/>
+                        <outlet property="previewView" destination="s2i-bf-23z" id="qfb-O1-lJf"/>
+                        <outlet property="resumeButton" destination="UOE-dc-6xq" id="o66-Ye-4s8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="131.78410794602701"/>
         </scene>
     </scenes>
 </document>
